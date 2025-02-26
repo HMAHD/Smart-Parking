@@ -22,10 +22,6 @@
 ✅ **Multi-Language Support** - Choose your preferred language.  
 ✅ **Promo Codes** - Discount offers via codes.
 
-<p align="center">
-  <img src="https://media.giphy.com/media/xUPGcHRxr8g4RYE2is/giphy.gif" width="400" alt="Features Animation">
-</p>
-
 ---
 
 ## 🏗️ **Installation Guide**
