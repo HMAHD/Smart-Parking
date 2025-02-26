@@ -1,75 +1,137 @@
-AdminBSB - Material Design
-=======================
-[![npm version](https://img.shields.io/npm/v/adminbsb-materialdesign.svg)](https://www.npmjs.com/package/adminbsb-materialdesign)
-![Bower version](https://img.shields.io/bower/v/adminbsb-materialdesign.svg)
+# 🚗 **Smart Parking Lot** 🚗
 
-**AdminBSB - Material Design is a fully responsive and free admin template.** It was developed with [Bootstrap 3.x Framework](http://getbootstrap.com) and [Google Material Design](https://material.google.com) of powers.
+<p align="center">
+  <img src="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif" width="300" alt="Smart Parking Logo">
+</p>
 
-It's really easy to customize and usage. You can use for from 320px to large resolution pixels of new generation screens and mobile devices. (**Fully Responsive Material Design**)
+![GitHub Repo](https://img.shields.io/github/repo-size/HMAHD/Smart-Parking?style=for-the-badge)
+![Laravel Version](https://img.shields.io/badge/Laravel-5.4%2B-red?style=for-the-badge)
+![License](https://img.shields.io/github/license/HMAHD/Smart-Parking?style=for-the-badge)
 
-Looking for Premium Templates?
-----------------
-**If you need more features please visit portfolio of mine which page link is [https://themeforest.net/user/gurayyarar/portfolio](http://bit.ly/2oPFpmQ)**
+> 🚀 A **web-based parking reservation system** for real-time parking bookings, managing spaces, and communicating with users via email & SMS notifications!
 
-Demo
-----------------
-You can check the website preview with **[this link](https://gurayyarar.github.io/AdminBSBMaterialDesign/)**  
+---
 
-![AdminBSB - Free Admin Template With Material Design](https://raw.githubusercontent.com/gurayyarar/AdminBSBMaterialDesign/master/images/screenshot.png)
+## 📌 **Features at a Glance**
 
-Installation
-----------------
-You can choose one from multiple ways for installation.
+✅ **Real-Time Booking** - Instant & scheduled parking reservations.  
+✅ **User Roles** - Super Admin, Admin, and Operator management.  
+✅ **Notifications** - Automated email & SMS alerts.  
+✅ **Reports** - Export bookings in **PDF, CSV, Excel**.  
+✅ **Google Maps** - Find the nearest parking zones.  
+✅ **Multi-Language Support** - Choose your preferred language.  
+✅ **Promo Codes** - Discount offers via codes.
 
-**GitHub**
-- Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
-- Clone to your machine
+<p align="center">
+  <img src="https://media.giphy.com/media/xUPGcHRxr8g4RYE2is/giphy.gif" width="400" alt="Features Animation">
+</p>
+
+---
+
+## 🏗️ **Installation Guide**
+
+### 🚀 **Step 1: Clone the Repository**
+
+```sh
+git clone https://github.com/HMAHD/Smart-Parking.git
+cd Smart-Parking
 ```
-git clone https://github.com/gurayyarar/AdminBSBMaterialDesign.git
+
+### 📦 **Step 2: Install Dependencies**
+
+Ensure **Composer** is installed, then run:
+
+```sh
+composer install
 ```
 
-**npm**
-```
-npm install adminbsb-materialdesign
-```
+### ⚙️ **Step 3: Configure Environment**
 
-**bower**
-```
-bower install adminbsb-materialdesign
+Duplicate `.env.example` and rename it to `.env`:
+
+```sh
+cp .env.example .env
 ```
 
-Documentation
-----------
-Visit the **[documentation](https://gurayyarar.github.io/AdminBSBMaterialDesign/documentation/)**
+Edit `.env` and set up your **database credentials**:
 
-Browser Support
-----------
-- IE 10 +
-- Microsoft Edge (Latest)
-- Mozilla Firefox (Latest)
-- Google Chrome (Latest)
-- Opera (Latest)
-- Safari (Latest)
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_db_name
+DB_USERNAME=your_db_user
+DB_PASSWORD=your_db_password
+```
 
-Change Logs
-----------
-You can display all release notes with **[this link](https://gurayyarar.github.io/AdminBSBMaterialDesign/pages/changelogs.html)**
+### 📌 **Step 4: Generate Application Key**
 
+```sh
+php artisan key:generate
+```
 
-FAQ
-===
-**Can I use this template for personal or commercial websites/web projects?**  
-Sure, you can use both of personal and commercial websites/web projects.
+### 🏗️ **Step 5: Run Database Migrations**
 
-**Is the attribution link required?**  
-No, not required. (Though very much appreciated)
+```sh
+php artisan migrate --seed
+```
 
-License
-----------
-**AdminBSB - Material Design** is an open source project that is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+This will create required tables & insert default data.
 
-Donations
-----------
-Donations are **greatly appreciated!**
+### 🚀 **Step 6: Start the Application**
 
-**[BUY ME A COFFEE](http://bit.ly/2yEjtx5)**
+```sh
+php artisan serve
+```
+
+Visit **[http://127.0.0.1:8000](http://127.0.0.1:8000)** in your browser.
+
+<p align="center">
+  <img src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" width="400" alt="Installation Success">
+</p>
+
+---
+
+## 📂 **Project Structure**
+
+📂 **Frontend** (HTML, CSS, JavaScript, Bootstrap)  
+📂 **Backend** (Laravel, MySQL, API Integrations)  
+📂 **Database** (User & Booking Management)
+
+---
+
+## 🛠️ **User Roles & Permissions**
+
+👑 **Super Admin** - Full control over the system.  
+🔧 **Admin** - Manages parking zones & bookings.  
+👷 **Operator** - Manages customer bookings.
+
+---
+
+## 📊 **Dashboard Features**
+
+📌 **Booking Analytics** - View total bookings & earnings.  
+📌 **Parking Zone Management** - Add, edit, delete zones.  
+📌 **Customer Management** - Manage user accounts.  
+📌 **Promo Codes** - Create & apply discount codes.  
+📌 **Reports Export** - Download booking reports.
+
+---
+
+## 📜 **API Integrations**
+
+📍 **Google Maps API** - Find parking spots.  
+📧 **Mailgun / SMTP** - Send email notifications.  
+📲 **Twilio / Nexmo** - Send SMS alerts.
+
+---
+
+## 🏁 **Final Notes**
+
+🔹 **Recommended PHP version**: 7.2+  
+🔹 **Required Extensions**: OpenSSL, PDO, Mbstring, XML  
+🔹 **Laravel Version**: 5.4+
+
+> 🏆 **Built for parking lot owners & admins to streamline parking management effortlessly.**
+
+🚀 **Happy Coding!**
