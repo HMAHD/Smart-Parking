@@ -1,4 +1,4 @@
-# 🚗 **Smart Parking Lot** 🚗
+# 🚗 **Smart Parking Lot Management Syetem** 🚗
 
 <p align="center">
   <img src="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif" width="300" alt="Smart Parking Logo">
@@ -21,10 +21,6 @@
 ✅ **Google Maps** - Find the nearest parking zones.  
 ✅ **Multi-Language Support** - Choose your preferred language.  
 ✅ **Promo Codes** - Discount offers via codes.
-
-<p align="center">
-  <img src="https://media.giphy.com/media/xUPGcHRxr8g4RYE2is/giphy.gif" width="400" alt="Features Animation">
-</p>
 
 ---
 
