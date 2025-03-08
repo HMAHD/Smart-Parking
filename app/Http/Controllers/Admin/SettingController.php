@@ -25,9 +25,9 @@ class SettingController extends Controller
         if (!$setting) 
         {
             Setting::create([
-                'title'  => "Smart-Parking",
+                'title'  => "Bit-Parking Lot",
                 'email'  => "application@example.com",
-                'footer' => "&copy; 2025  - Akash Hasendra.",
+                'footer' => "&copy; 2018 - 2019 Bit-Parking Lot.",
                 'map_api_key' => "AIzaSyBnNwWEbC5yWgXtxNvF_WnfKTFHf4FZs4E"
             ]);
         } 
